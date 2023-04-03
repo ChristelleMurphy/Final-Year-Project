@@ -22,7 +22,7 @@ export default class Camera{
             1000
         );
         this.scene.add(this.perspectiveCamera)
-        this.perspectiveCamera.position.z = 5;
+        this.perspectiveCamera.position.z = 20;
     }
 
     creatOrthographicCamera(){
@@ -37,13 +37,13 @@ export default class Camera{
         );
         this.scene.add(this.orthographicCamera)
 
-        const size = 20;
-        const divisions = 20;
+        const size = 10;
+        const divisions = 10;
 
         const gridHelper = new THREE.GridHelper(size, divisions);
         this.scene.add(gridHelper);
 
-        const axesHelper = new THREE.AxesHelper(10);
+        const axesHelper = new THREE.AxesHelper(5);
         this.scene.add(axesHelper);
     }
 
